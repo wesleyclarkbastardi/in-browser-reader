@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Reader App</title>
+    <meta name="description" content="A browser e-reader">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/vendor/angular.min.js" defer></script>
+    <script src="js/vendor/angular-route.min.js" defer></script>
+
+  </head>
+  <body ng-app="ReaderApp">
+    <div class="header">
+      <div class="container">
+        Reader
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+          <div ng-view></div>
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/BookshelfController.js" defer></script>
+    <script src="js/controllers/BookController.js" defer></script>
+    <script src="js/controllers/ChapterController.js" defer></script>
+  </body>
+</html>
